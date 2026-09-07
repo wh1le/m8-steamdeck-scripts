@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+cd "$HOME"
 git clone https://github.com/roterodamus/steamdeck-m8c.git
 cd steamdeck-m8c/
 chmod +x download-m8c-latest.sh
@@ -5,6 +9,4 @@ chmod +x install-libserialport.sh
 chmod +x steamdeck-audiofix.sh
 ./download-m8c-latest.sh
 ./install-libserialport.sh
-
-# fix audio
 ./steamdeck-audiofix.sh
