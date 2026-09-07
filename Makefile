@@ -6,4 +6,3 @@ flash:
 test:
 	sudo chmod 666 /dev/ttyACM0
 	nix run github:laamaa/m8c -- --dev /dev/ttyACM0
-	nix run github:laamaa/m8c
